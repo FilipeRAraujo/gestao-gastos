@@ -41,7 +41,7 @@ export default {
     methods: {
         async login() {
             const { email, password } = this;
-            const data = await axios.post("http://192.168.0.7:8000/login",
+            const data = await axios.post("http://localhost:8000/login",
                 { email: email, senha: password },
                     { mode: 'no-cors',
                         headers: {

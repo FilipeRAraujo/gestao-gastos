@@ -40,7 +40,7 @@ export default {
         async register(){
             const { nome, email, password, confirmPassword } = this;
             if(password.trim() == confirmPassword.trim()){
-                const data = await axios.post("http://192.168.0.7:8000/register",
+                const data = await axios.post("http://localhost:8000/register",
                 { nome: nome, email: email, senha: password },
                     { mode: 'no-cors',
                         headers: {
